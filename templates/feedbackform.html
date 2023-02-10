@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    :root{
+        background: #0f0e17;
+        font-weight: 500;
+        font-size: large;
+        color: #a7a9be ;
+        overflow-x: hidden;
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:bisque;
+        text-decoration: underline;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    label{
+        color: orange;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .submit{
+        position: relative;
+        left: 300px;
+        margin-bottom: 10px;
+        transform:scale(1.3);
+    }
+    
+    .submit button{
+        background-color: #7c063b;
+        color: #f1c197;
+        border-color: #7c063b;
+        border-radius: 20px;
+        transition: ease-in-out 0.5s;    
+    }
+    
+    .submit:hover button{
+        transform: scale(1);
+        transform: translateY(-4px);
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif
+    }
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor:pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: default;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+        transition: 0.7s ease-in-out;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        cursor: default;
+        background-color:aqua ;
+        
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalise your analysis</title>
+    <link rel="stylesheet" href="./feedback.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Feedback Form</h1>
+    </div>
+    <div class="form">
+        <form action="/" method="POST">
+            <div class="q1">
+                <h2>Which web browser do you normally use?</h2>
+                
+                <label class="container" for="b1">Internet Explorer
+                    <input type="checkbox" id="b1" name="b1" value="Internet Explorer">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="b2">Firefox
+                    <input type="checkbox" id="b2" name="b2" value="Firefox">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="b3">Mozilla
+                    <input type="checkbox" id="b3" name="b3" value="Mozilla">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="b4">Opera
+                    <input type="checkbox" id="b4" name="b4" value="Opera">
+                    <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+
+            <div class="q2">
+                <h2>Which of the following social media website do you currently have an account with?</h2>
+                
+                <label class="container" for="s1">Facebook
+                    <input type="checkbox" id="s1" name="s1" value="Facebook">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="s2">Twitter
+                    <input type="checkbox" id="s2" name="s2" value="Twitter">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="s3">Instagram
+                    <input type="checkbox" id="s3" name="s3" value="Instagram">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="s4">LinkedIn
+                    <input type="checkbox" id="s4" name="s4" value="LinkedIn">
+                    <span class="checkmark"></span>
+                </label><br><br>
+            </div>
+
+            <div class="q3">
+                <h2>On a regular day how many times do you post pictures, comments, etc on your social media account?</h2>
+                <input type="radio" id="c1" name="c" value="Extremely often">
+                <label for="c1">Extremely often</label><br><br>
+                <input type="radio" id="c2" name="c" value="Moderately often">
+                <label for="c2">Moderately often</label><br><br>
+                <input type="radio" id="c3" name="c" value="Slightly often">
+                <label  for="c3">Slightly often</label><br><br>
+                <input type="radio" id="c4" name="c" value="Not At All">
+                <label for="c4">Not At All</label><br><br>
+            </div>
+
+            <div class="q4">
+                <h2>How do you differentiate between a real and a fake account?</h2>
+                
+                <label class="container" for="d1">Profile picture
+                    <input type="checkbox" id="d1" name="d1" value="Profile picture">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="d2">Bio
+                    <input type="checkbox" id="d2" name="d2" value="Bio">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="d3">Posts
+                    <input type="checkbox" id="d3" name="d3" value="Posts">
+                    <span class="checkmark"></span>
+                </label><br><br>
+                
+                <label class="container" for="d4">Followers-Following ratio
+                    <input type="checkbox" id="d4" name="d4" value="Followers-Following ratio">
+                    <span class="checkmark"></span>
+                </label> <br><br>
+            </div>
+
+            <div class="q5">
+                <h2>Have you ever came to know that the person you talked online was having a fake account?</h2>
+                <input type="radio" id="f1" name="f" value="Yes">
+                <label for="f1">Yes</label><br><br>
+                <input type="radio" id="f2" name="f" value="No">
+                <label for="f2">No</label> <br><br><br><br>
+            </div>
+            <div class="submit">
+                <button class="submit" type="submit"> Submit </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

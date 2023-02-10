@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        body {
+            background-color: #cdf4ec;
+        }
+
+        .styled-table,
+        .styled-table1 {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            margin-left: 230px;
+        }
+
+        .styled-table thead tr,
+        .styled-table1 thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .styled-table th,
+        .styled-table td,
+        .styled-table1 th,
+        .styled-table1 td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        .styled-table tbody tr,
+        .styled-table1 tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even),
+        .styled-table1 tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type,
+        .styled-table1 tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+    </style>
+
+    <body>
+
+
+        <table class="styled-table">
+            <thead>
+                <div>
+                    <tr>
+                        <th colspan="6">Followers</th>
+                    </tr>
+
+                    </tr>
+            </thead>
+            <tbody>
+                <div>
+                    <tr>
+                        <th>Fake Users</th>
+                        <th>Real Users</th>
+                    </tr>
+                    <tr class="active-row">
+                        {% for fake, real in followers[0], followers[1] % }
+                    <tr>
+                        <td>{{fake}}</td>
+                        <td>{{real}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% for fake, real in following[0], following[1]}
+                    <tr>
+                        <td>{{fake}}</td>
+                        <td>{{real}}</td>
+                        {%endfor%}
+                    </tr>
+                </div>
+        </table>
+        </tbody>
+        </table>
+    </body>
+
+</html>

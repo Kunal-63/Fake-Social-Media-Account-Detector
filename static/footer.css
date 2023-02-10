@@ -1,0 +1,79 @@
+.names{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 230px;
+    font-size: x-large;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.details{
+    background-color: #b8c1ec;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    margin-left: -10px;
+    transform:translateY(10px);
+    
+}
+.details ul{
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
+
+.acc{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    font-size: x-large;
+}
+.email{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+.phone{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    font-size: x-large;
+
+}
+.numbers{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+ 
+footer h1{
+    margin-left: 10px;
+    margin-top:40px;
+}
+
+footer{
+    margin-top: 420px;
+    width: 100vw;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+
+footer li{
+    list-style: none;
+}
+
+a:visited{
+    color: #b8c1ec;
+}
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: hotpink;
+}
+
+a:active{
+    color: blue;
+}

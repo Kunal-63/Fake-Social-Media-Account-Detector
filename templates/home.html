@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body{
+        background-color: #232946;
+        overflow-x: hidden;
+    }
+    @import url(./Montserrat.zip);
+
+    li,a,button{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #edf0f1;
+      text-decoration: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15%;
+        
+    }
+    .nav{
+      color: aliceblue;
+      margin-top: -70px;
+      transform: translateX(510px);
+    }
+    .logo{
+        cursor: pointer;
+
+    }
+  .nav-links a:link{
+    color:rgba(240, 255, 255, 0.87) ;
+  }
+
+    .nav-links{
+        color: azure;
+        list-style: none;
+        font-weight: 1000;
+        
+    }
+    .nav-links li{
+        color: whitesmoke;
+        display: inline-block;
+        margin-left: 80px;
+        font-size: 49px;
+
+    }
+
+    .nav-links a:hover{
+        color: #0088a9;
+    }
+
+    
+    .steps{
+      margin-bottom: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .line{
+      margin-left: 600px;
+      height: 900px;
+      width: 5px;
+      background-color: white;
+    }
+    
+    .glow {
+        -webkit-box-shadow: 0px 0px 14px 21px rgba(212, 178, 85, 0.48);
+        -moz-box-shadow: 0px 0px 14px 21px rgba(212, 178, 85, 0.48);
+        box-shadow: 0px 0px 14px 21px rgba(212, 178, 85, 0.48);
+    }
+    .circle{
+      position: relative;
+      height: 50px;
+      border-radius: 100px;
+      width: 50px;
+      margin-right: 10px;
+      background-color: #b8c1ec;
+    }
+    
+    .c1{
+      right: 27px;
+      bottom: 430px;
+    }
+    
+    .c2{
+      right: 87px;
+      bottom: 150px;
+    }
+    
+    .c3{
+      right: 147px;
+      top: 450px;
+    }
+    
+    .c4{
+      right: 207px;
+      top: 150px;
+    }
+    
+    
+    .boxes{
+      width: 120px;
+      position: relative;
+      height: 60px;
+      background-color: #eebbc3;
+      scale: 1.8;
+    }
+    
+    .b1{
+      right: 520px;
+      bottom: 400px;
+    }
+    
+    .b2{
+      right: 180px;
+      bottom: 150px;
+    
+    } 
+    
+    .b3{
+      right: 320px;
+      top: 380px;
+    }
+    
+    .b4{
+      top: 150px;
+      right: 920px;
+    }
+    
+    .arrow {
+      border: solid #b8c1ec;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      position: relative;
+    }
+    
+    .right {
+      position: relative;
+      left: 120px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      top: -60px;
+    }
+    
+    .left {
+      
+      right: 10px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      
+    }
+    .s2 h1{
+      color: #b8c1ec;
+      position: relative;
+      left: 900px;  
+      bottom: 100px;  
+      scale: 1.4;
+    }
+    
+    .arr0{
+      top: -60px;
+    
+    }
+    
+    .arr1{
+      top: -50px;
+    
+      transform: rotate(110deg);
+    }
+    
+    .arr2{
+      top: -50px;
+    }
+    
+    .b4 h6{
+      font-weight: 1700;
+    }
+    
+    
+    .boxes h4{
+      padding-left: 20px;
+      transform: translateY(-5px);
+    }
+    
+    .progress-bar {
+        width: 10px;
+        background: #d4b255;
+        border-radius: 2px;
+     
+    }
+    
+    .progress-bar:before {
+        height: 40%;
+    }
+    
+    #progressbar{
+      height: 1300px;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&family=Montserrat:ital,wght@0,400;1,400;1,500&display=swap");
+
+    body {
+      background-color: #232946;
+    }
+    .heading {
+      margin-left: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: -130px;
+      font-size: 30px;
+      color: #eebbc3;
+    }
+    .intro h1 {
+      margin-right: -15px;
+    }
+
+    .intro p {
+      width: 700px;
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 80px;
+    }
+
+    .about {
+      margin-top: 200px;
+      margin-left: 1000px;
+      font-size: x-large;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+
+    .container-ig {
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 250px;
+      width: 280px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(1.5);
+      margin-top: 550px;
+      margin-left: 580px;
+      top: 200px;
+      transform: translateY(140px);
+      margin-left: 460px;
+    }
+    .select1 {
+      align-items: center;
+    }
+
+    a {
+      color: aliceblue;
+    }
+
+    p {
+      color: #b8c1ec;
+    }
+
+    .box {
+      padding: 1px 10px;
+      margin: 22px 90px;
+      min-width: 20vw;
+      align-self: center;
+      text-align: center;
+    }
+
+    .wlcm-img {
+      margin-left: 770px;
+      transform: translateY(-70px);
+      transform: scale(1.2);
+      margin-top: -250px;
+    }
+    .abtproj {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #b8c1ec;
+    }
+    .abt {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #eebbc3;
+    }
+    button {
+      background-color: #eebbc3;
+      border: 0px;
+    }
+    .igimg {
+      transform: scale(0.3);
+      margin-top: -200px;
+      position: relative;
+      right: 280px;
+      margin-left: 310px;
+    }
+
+    section {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .s3{
+      height: 20vh;
+    }
+
+    .s1 {
+      margin-top: 100px;
+      margin-left: 100px;
+    }
+
+    .reveal{
+      position: relative;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: 0.2s all ease;
+    }
+
+    .reveal.active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .login{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      bottom: 60px;
+      background-color: #eebbc3;
+      width: 350px;
+      height: 50px;
+      transform: translate(550px,-150px);
+      margin-left: -120px;
+    }
+    .names{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 230px;
+        font-size: x-large;
+        
+    }
+    .name{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        
+        margin-top: 40px;
+    }
+.name li{
+  color: #232946;
+}
+
+    .details{
+        background-color: #b8c1ec;
+        display: flex;
+        height: 100px;
+        width: 110vw;
+        margin-left: -10px;
+        transform:translate(-8px,10px);
+        
+        
+    }
+    .details ul{
+        margin-left: 100px;
+        margin-bottom: 40px;
+    }
+
+    .acc{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 20px;
+        font-size: x-large;
+    }
+    .email{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        margin-top: 40px;
+        
+    }
+    .phone{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 20px;
+        font-size: x-large;
+
+    }
+    .numbers{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        margin-top: 40px;
+
+    }
+    
+    footer h1{
+        margin-left: 10px;
+        transform: translateY(20px);
+    }
+
+    footer{
+        margin-top: 420px;
+        width: 100vw;
+        margin-bottom: 0px;
+    }
+
+
+    footer li{
+        list-style: none;
+        margin-top: -10px;
+    }
+    
+    
+
+    a:visited{
+        color: #b8c1ec;
+    }
+    a:link{
+        color: black;
+    }
+
+    a:hover{
+        color: hotpink;
+    }
+
+    a:active{
+        color: blue;
+    }
+    .btn{
+      background-color: mediumslateblue;
+      transition: 0.7s ease-in-out;
+      border-bottom: #753a88;
+    }
+    .btn:hover{
+      background-color:powderblue ;
+      transition: 0.7s all 0.3s ease;
+    }
+    .contact{
+      margin-top: 15px;
+    }
+    .s2 h1{
+      margin-left:-150px;
+    }
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/steps.css" />
+    <link rel="stylesheet" href="./stylesheets/homepage.css" />
+    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <title>UI</title>
+</head>
+<header class="header">
+  
+  <nav class="nav">
+      <ul class="nav-links">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+  </nav>
+  
+</header>
+
+<body>
+    <section class="s1">
+        <div class="heading">
+            <h1>Welcome To cybernetics</h1>
+        </div>
+        <div class="intro">
+            <p>
+                In today's world, the social media platforms are being used on daily
+                basis and has become an important part of our lives. The number of
+                peoples on social media platforms are incrementing at a greater level
+                for malicious use. There are numerous cases where produced accounts
+                have been effectively distinguished utilizing machine adapting
+                techniques however the amount of research work is very low to
+                recognize counterfeit characters made by people. <br /><br />
+                In order to accomplish the task of detecting, identifying and
+                eliminate the fake accounts we establish a forged human account. Our
+                model aims to deal with that problem, specifically. As fake profiles
+                will reduce, it will also reduce of the advertisement of third-party
+                application that promotes illegal activities so the crime rates will
+                also reduce.
+            </p>
+        </div>
+
+        <div class="wlcm-img">
+
+            <img class="rlfk" src="{{ url_for('static', filename = 'realfake.png')}}" />
+            <img class="igimg" src="{{ url_for('static', filename = 'Instagram_logo_2016.svg.png') }}" />
+        </div>
+    </section>
+
+    <section class="s2">
+        <h1>Steps of our working</h1>
+        <div class="steps">
+            <div class="line">
+                <div id="progressbar" class="progress-bar"></div>
+            </div>
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <div class="circle c4"></div>
+            <div class="boxes b1 reveal">
+                <h4>Data Collection</h4>
+                <div class="arrow right"></div>
+            </div>
+            <div class="boxes b2 reveal">
+                <h4>Feature Extraction</h4>
+                <div class="arrow left arr0"></div>
+            </div>
+            <div class="boxes b3 reveal">
+                <h4>Account Detection</h4>
+                <div class="arrow left arr1"></div>
+            </div>
+            <div class="boxes b4 reveal">
+                <h5>Training data through parameters</h5>
+                <div class="arrow right arr2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="container-ig">
+            <div class="select1 reveal">
+              <form method="POST">
+                <button type="submit">
+                    <img src="{{ url_for('static', filename = 'Instagram_logo_2016.svg.png') }}" /></a>
+                </button>
+              </form>
+            </div>
+        </div>
+        <div class="login">
+            <h2>Click to proceeed to login page</h2>
+        </div>
+    </section>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        const scrollProgress = document.getElementById("scroll-progress");
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const progressBar = document.getElementById("progressbar");
+        progressBar.style.height = 5 + "%";
+
+        window.onscroll = () => {
+            const scroll = document.documentElement.scrollTop;
+            const height =
+                document.documentElement.scrollHeight - window.innerHeight;
+            let scrolled = (window.pageYOffset / height) * 100;
+            progressBar.style.height = scrolled + "%";
+        };
+    </script>
+
+    <footer class="details">
+        <h1 class="contact">Contact Us :</h1>
+        <ul class="name">
+            <li >Pratham Chellani</li><br>
+            <li >Dhruv Golani</li>
+        </ul>
+        <ul class="email">
+            <li>
+                <a href="mailto: cyborgkiller1008@gmail.com">cyborgkiller1008@gmail.com</a>
+            </li><br>
+            <li>
+                <a href="mailto: dhruvgolani0504@gmail.com">dhruvgolani0504@gmail.com</a>
+            </li>
+        </ul>
+        <ul class="numbers">
+            <li><a href="tel:+919664590100"> +91 9664590100 </a></li><br>
+            <li><a href="tel:+919825900160"> +91 9825900160 </a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

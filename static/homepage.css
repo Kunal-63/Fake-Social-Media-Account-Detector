@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&family=Montserrat:ital,wght@0,400;1,400;1,500&display=swap");
+
+body {
+  background-color: #232946;
+ 
+}
+.heading {
+  margin-left: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #eebbc3;
+}
+.intro h1 {
+  margin-right: -15px;
+}
+
+.intro p {
+  width: 700px;
+  font-size: larger;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about {
+  margin-top: 200px;
+  margin-left: 1000px;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.container-ig {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 250px;
+  width: 280px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.5);
+  margin-top: 550px;
+  margin-left: 580px;
+  top: 200px;
+  transform: translateY(140px);
+}
+.select1 {
+  align-items: center;
+}
+
+a {
+  color: aliceblue;
+}
+
+p {
+  color: #b8c1ec;
+}
+
+.box {
+  padding: 1px 10px;
+  margin: 22px 90px;
+  min-width: 20vw;
+  align-self: center;
+  text-align: center;
+}
+
+.wlcm-img {
+  margin-left: 900px;
+  transform: translateY(-70px);
+  transform: scale(1.5);
+  margin-top: -250px;
+}
+.abtproj {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b8c1ec;
+}
+.abt {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eebbc3;
+}
+button {
+  background-color: #eebbc3;
+  border: 0px;
+}
+.igimg {
+  transform: scale(0.3);
+  margin-top: -300px;
+  position: relative;
+  right: 280px;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.s3{
+  height: 20vh;
+}
+
+.s1 {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.2s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.login{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  bottom: 60px;
+  background-color: #eebbc3;
+  width: 350px;
+  height: 50px;
+  transform: translate(550px,-150px);
+}
