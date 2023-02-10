@@ -5,27 +5,15 @@ L = instaloader.Instaloader()
 username1 = input("Username: ")
 password1 = input("Password: ")
 account_name1 = input("Account Name: ")
-profile = instaloader.Profile.from_username(L.context, account_name1)
 L.login(username1, password1)
-
-
-followers = profile.get_followers()
-followers_list = []
-for follower in followers:
-    followers_list.append(follower.username)
-
 
 cl = Client()
 cl.login(username1, password1)
 
-real_following = []
-prob_real_following = []
-fake_following = []
-prob_fake_following = []
 percent = 0
 dict=cl.user_info_by_username(account_name1).dict()
 if (dict["is_verified"] == True):
-    real_following.append(account_name1)
+    print(account_name1,"is real")
 else:
     try:
         profile = instaloader.Profile.from_username(L.context, account_name1)
